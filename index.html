@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>TRIVIA</title>
+</head>
+<body>
+
+<h1 class="titulo">¡Bienvenida! Pon a prueba tus conocimientos del Perú</h1>
+<h2 class="titulo">¿Cuál es tu nombre?</h2>
+
+<input type="text" id="usuario" value="">
+<button type="button" onclick="hola()"> Enviar </button>
+<p id="mensaje"></p>
+
+
+<div class="preguntas">
+
+    <div id="TRIVIA1">
+        <div id="P1">
+            <h2>TEMA 1: CIUDADES</h2>
+            <hr />
+            <p id="mensaje1"></p>
+            <p id="opcion1"></p>
+            <p id="comentario1"></p>
+            <p id="click1"></p>
+        </div>
+    </div>
+
+    <script>
+        var preguntaUno = ["¿Cuál es la ciudad de la eterna primavera?"];
+        var opcionesUno = ["<input onclick=correctoUno() name=b1 type=radio />Trujillo<br /><input onclick=erradoUno() name=b1 type=radio />Madrid<br /><input onclick=erradoUno() name=b1 type=radio />Piura<br /><input onclick=erradoUno() name=b1 type=radio />Toronto<br />"];
+
+        var preguntaDos = ["¿Cuál es la ciudad conocida como el ombligo del mundo"];
+        var opcionesDos = ["<input onclick=correctoDos() name=b2 type=radio />Cusco<br /><input onclick=erradoDos() name=b2 type=radio />Quito<br /><input onclick=erradoDos() name=b2 type=radio />La Paz<br /><input onclick=erradoDos() name=b2 type=radio />Santiago<br />"];
+
+        var preguntaTres = ["¿En cuál ciudad se encuentra el rio más largo y caudaloso del mundo?"];
+        var opcionesTres = ["<input onclick=erradoTres() name=b3 type=radio />Lima<br /><input onclick=erradoTres() name=b3 type=radio />Puno<br /><input onclick=correctoTres() name=b3 type=radio />Iquitos<br /><input onclick=erradoTres() name=b3 type=radio />El Cairo<br />"];
+        var a;
+        var b;
+        var c;
+        var z;
+
+    </script>
+
+</body>
+</html>
+
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+
+  </body>
+</html>
